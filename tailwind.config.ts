@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss'
+import forms from '@tailwindcss/forms'
+import animate from 'tailwindcss-animate'
 
 export default <Partial<Config>>{
   darkMode: 'class',
@@ -37,7 +39,7 @@ export default <Partial<Config>>{
     },
   },
   plugins: [
-    require('@tailwindcss/forms')({ strategy: 'class' }),
-    require('tailwindcss-animate'),
+    forms,
+    animate,
   ],
 }

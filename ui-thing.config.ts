@@ -1,5 +1,5 @@
 export default {
-  "theme": "zinc",
+  "theme": "slate",
   "tailwindCSSLocation": "assets/css/tailwind.css",
   "componentsLocation": "app/components/Ui",
   "composablesLocation": "app/composables",

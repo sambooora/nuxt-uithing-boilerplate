@@ -1,11 +1,4 @@
 <script setup lang="ts">
-const navLinks = [
-  { label: 'Features', href: '#' },
-  { label: 'Pricing', href: '#' },
-  { label: 'Blog', href: '#' },
-  { label: 'Contact', href: '#' },
-]
-
 const posts = [
   {
     id: 1,
@@ -39,34 +32,6 @@ const posts = [
 
 <template>
   <div class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100">
-    <!-- Header -->
-    <header class="border-b border-gray-200 dark:border-gray-800">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex h-16 items-center justify-between">
-          <a href="#" class="flex items-center gap-2">
-            <Icon name="ph:rocket-launch-duotone" class="size-6 shrink-0" />
-            <span class="font-semibold">Acme Inc</span>
-          </a>
-
-          <nav class="hidden md:flex items-center gap-6">
-            <a
-              v-for="link in navLinks"
-              :key="link.label"
-              :href="link.href"
-              class="text-sm font-medium hover:underline underline-offset-4"
-            >
-              {{ link.label }}
-            </a>
-          </nav>
-
-          <div class="flex items-center gap-3">
-            <UiButton variant="ghost" size="sm">Sign In</UiButton>
-            <UiButton size="sm">Sign Up</UiButton>
-          </div>
-        </div>
-      </div>
-    </header>
-
     <!-- Hero -->
     <section class="py-20 md:py-28">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -134,20 +99,5 @@ const posts = [
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="border-t border-gray-200 bg-gray-50 py-8 dark:border-gray-800 dark:bg-gray-900">
-      <div
-        class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-4 sm:flex-row items-center justify-between"
-      >
-        <p class="text-sm text-gray-600 dark:text-gray-400">
-          © 2025 Acme Inc. All rights reserved.
-        </p>
-        <div class="flex items-center gap-4">
-          <a href="#" class="text-sm hover:underline underline-offset-4">Terms</a>
-          <a href="#" class="text-sm hover:underline underline-offset-4">Privacy</a>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
