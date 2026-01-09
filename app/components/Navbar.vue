@@ -63,12 +63,11 @@ const handleNavClick = (href: string) => {
 
         <!-- CTA Desktop -->
         <div class="hidden lg:block">
-          <a
-            href="mailto:support@jogjanode.com"
-            class="block w-full text-center px-2 text-sm py-2 bg-primary text-primary-foreground font-semibold rounded-md hover:bg-gradient-to-tr from-teal-500 to-green-300 hover:text-white transition-colors duration-200"
+          <UiButton
+            size="sm"
           >
             Get a Quote
-          </a>
+          </UiButton>
         </div>
 
         <!-- Mobile Menu Button -->

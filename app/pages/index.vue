@@ -57,7 +57,7 @@ const posts = [
           <article
             v-for="post in posts"
             :key="post.id"
-            class="rounded-xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md dark:border-gray-800 dark:bg-gray-900"
+            class="rounded-xl border shadow-sm transition hover:shadow-md bg-background/80 backdrop-blur-xl border-b border-border/50"
           >
             <img :src="post.image" alt="" class="aspect-[4/3] w-full rounded-t-xl object-cover" />
             <div class="p-6">
